@@ -1,0 +1,9 @@
+#新言語作成するならこんな感じになる？
+
+
+main(){
+
+    fairy int number=0
+
+    return 0
+}
