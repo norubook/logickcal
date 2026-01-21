@@ -1,9 +1,7 @@
 #新言語作成するならこんな感じになる？
 
+apostle elena(123,equip("rank7",head),printfunc(),breakfunc())
 
-main(){
 
-    fairy int number=0
-
-    return 0
-}
+print(elena.HP)
+use elena.skill_2
