@@ -22,6 +22,98 @@ healfunc():ヒットポイントを回復する．
 命令を受け付けなくなる．
 
 
+```
+apostle gideon{
+    action random_action;
+    status 30;
+    end apostle;
+}
+
+apostle elphin{
+    action breakfunc;
+    status 20;
+    end apostle;
+}
+
+fun attack(){
+    use gideon;
+    use elphin;
+}
+
+fun attack_random(){
+    use random_apostle;
+}
+
+fun status(){
+    print(gideon.status);
+    print(elphin.status);
+}
+
+
+fun main(){
+
+    attack();
+    status();
+    save(gideon);
+    save(elphin);
+    load(yomi);
+    attack_random;
+    return 0;
+}
+```
+
+を書くようにする？
+
+pythonファイルにするのであれば，
+
+
+
+
+
+
+
+```
+class apostle:
+    def 
+    __init__(self):
+        self.name=""
+        self.action_num=0
+        self.hp=0
+
+def making_apostle():
+    apostles = []
+    new_apostle = apostle()
+    new_apostle.name="gideon"
+    new_apostle.action_num=0
+    new_apostle.hp=30
+    apostles.append(new_apostle)
+    new_apostle = apostle()
+    new_apostle.name="elphin"
+    new_apostle.action_num=1
+    new_apostle.hp=20
+    apostles.append(new_apostle)
+
+
+def use_action():
+    ###考える必要あり
+
+
+
+
+def file_name():
+    making_apostle()
+
+    use_action()
+
+
+    return 0
+
+
+
+
+
+```
+
 
 
 
