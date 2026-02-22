@@ -95,6 +95,13 @@ def making_apostle():
 
 
 def use_action():
+    apostle = "gideon" in apostles.name
+    action(apostle.action)
+
+    apostle = "elphin" in apostles.name
+    action(apostle.action)
+    
+
     ###考える必要あり
 
 
